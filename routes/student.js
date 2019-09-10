@@ -8,7 +8,7 @@ var mongoose = require('mongoose');
 // });
 
 mongoose.connect('mongodb://localhost/studentcollection', {
-    useNewUrlParser: true,
+    useNewUrlParser: false,
     useUnifiedTopology: true
 }, (err) => {
     if (err) throw err;
