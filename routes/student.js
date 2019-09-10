@@ -7,7 +7,10 @@ var mongoose = require('mongoose');
 //     useUnifiedTopology: true
 // });
 
-mongoose.connect('mongodb://localhost/studentcollection', function(err) {
+mongoose.connect('mongodb://localhost/studentcollection', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}, (err) => {
     if (err) throw err;
     console.log('Successfully connected');
 
